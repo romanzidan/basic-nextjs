@@ -1,16 +1,9 @@
-import Link from 'next/link';
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <>
-      <header>
-        <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/blog">Blog</Link></li>
-          <li><Link href="/users">Users</Link></li>
-        </ul>
-      </header>
-      <h1>Welcome my bro</h1>
-    </>
-  );
+    <Layout>
+      <h1>Home Page</h1>
+    </Layout>
+  )
 }
