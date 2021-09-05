@@ -9,11 +9,10 @@ interface UsersProps {
 export default function Users(props: UsersProps) {
   const { dataUsers } = props;
   const router = useRouter();
-  console.log(dataUsers);
   return (
     <Layout pageTitle="User Page">
       {dataUsers.map((user) => (
-        <div key={user.id} onClick={() => router.push(`/users/${user.id}`)} className={styles.card}>
+        <div key={user.id} onClick={() => router.push(`/users/${user.id}`)} className={styles.card} >
           <p>{user.name}</p>
           <p>{user.email}</p>
         </div>
